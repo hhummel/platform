@@ -1,6 +1,5 @@
 test:
-    echo "Test"
-
+		echo "Test"
 
 build:
-    echo "Build"
+		echo "Build"
