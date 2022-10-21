@@ -1,9 +1,20 @@
 {
  "Resources": {
+  "CdkProjectQueueD30BD26F": {
+   "Type": "AWS::SQS::Queue",
+   "Properties": {
+    "VisibilityTimeout": 300
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "CdkProjectStack/CdkProjectQueue/Resource"
+   }
+  },
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/zPSMzHTM1BMLC/WTU7J1s3JTNKrDi5JTM7WcU7LC0otzi8tSk6t1QmoLMnIz9M31rPQM1TMKs7M1C0qzSvJzE3VC4LQALI1/kxIAAAA"
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/zPSMzHTM1BMLC/WTU7J1s3JTNKrDi5JTM7WAQrFFxcW61UHlqaWpuo4p+WBGbUgVlBqcX5pUTKQE1BZkpGfp2+sZ6FnqJhVnJmpW1SaV5KZm6oXBKEBQbxQpWEAAAA="
    },
    "Metadata": {
     "aws:cdk:path": "CdkProjectStack/CDKMetadata/Default"
