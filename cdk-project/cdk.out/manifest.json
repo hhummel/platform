@@ -17,20 +17,20 @@
     },
     "CdkProjectStack": {
       "type": "aws:cloudformation:stack",
-      "environment": "aws://unknown-account/unknown-region",
+      "environment": "aws://797628318271/us-east-1",
       "properties": {
         "templateFile": "CdkProjectStack.template.json",
         "validateOnSynth": false,
-        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
-        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/dfa9447c2b6590f77cc8f5a191186f27ea32e045436b3089824dcb813c2ce8e5.json",
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::797628318271:role/cdk-hnb659fds-deploy-role-797628318271-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::797628318271:role/cdk-hnb659fds-cfn-exec-role-797628318271-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-797628318271-us-east-1/7fd6d5813a1c6a82142e4f7498785cada577902db242e6807892fb4ddd2702b0.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
           "CdkProjectStack.assets"
         ],
         "lookupRole": {
-          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "arn": "arn:${AWS::Partition}:iam::797628318271:role/cdk-hnb659fds-lookup-role-797628318271-us-east-1",
           "requiresBootstrapStackVersion": 8,
           "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
         }
@@ -43,12 +43,6 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata"
-          }
-        ],
-        "/CdkProjectStack/CDKMetadata/Condition": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "CDKMetadataAvailable"
           }
         ],
         "/CdkProjectStack/BootstrapVersion": [

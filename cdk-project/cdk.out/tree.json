@@ -27,14 +27,6 @@
                   "fqn": "aws-cdk-lib.CfnResource",
                   "version": "2.46.0"
                 }
-              },
-              "Condition": {
-                "id": "Condition",
-                "path": "CdkProjectStack/CDKMetadata/Condition",
-                "constructInfo": {
-                  "fqn": "aws-cdk-lib.CfnCondition",
-                  "version": "2.46.0"
-                }
               }
             },
             "constructInfo": {
