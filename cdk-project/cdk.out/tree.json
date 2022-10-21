@@ -16,6 +16,30 @@
         "id": "CdkProjectStack",
         "path": "CdkProjectStack",
         "children": {
+          "CdkProjectQueue": {
+            "id": "CdkProjectQueue",
+            "path": "CdkProjectStack/CdkProjectQueue",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "CdkProjectStack/CdkProjectQueue/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::SQS::Queue",
+                  "aws:cdk:cloudformation:props": {
+                    "visibilityTimeout": 300
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_sqs.CfnQueue",
+                  "version": "2.46.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_sqs.Queue",
+              "version": "2.46.0"
+            }
+          },
           "CDKMetadata": {
             "id": "CDKMetadata",
             "path": "CdkProjectStack/CDKMetadata",
